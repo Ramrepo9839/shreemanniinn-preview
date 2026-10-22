@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShreeManniinn | A Memorable Stay in Sarnath</title>
+
+    <meta name="description" content="Discover ShreeManniinn in Sarnath, Varanasi. Explore our rooms and enquire about your stay.">
+
+    <style>
+
+        :root {
+
+            --green: #173f35;
+
+            --green-dark: #102e27;
+
+            --gold: #c7a15c;
+
+            --cream: #fbf8f1;
+
+            --text: #29332e;
+
+            --muted: #737b75;
+
+        }
+
+        .hotel-logo {
+
+    display: block;
+
+    width: 90px;
+
+    height: 90px;
+
+    object-fit: contain;
+
+}
+
+.logo {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    text-decoration: none;
+
+}
+
+@media (max-width: 560px) {
+
+    .hotel-logo {
+
+    display: block;
+
+    width: 114px;
+
+    height: 104px;
+
+    object-fit: contain;
+
+    background: #ffffff;
+
+}
+
+}
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+
+            font-family: Arial, Helvetica, sans-serif;
+
+            color: var(--text);
+
+            background: white;
+
+            line-height: 1.6;
+
+        }
+
+        a { text-decoration: none; }
+
+        .topbar {
+
+            background: var(--green-dark);
+
+            color: #eee4d0;
+
+            text-align: center;
+
+            padding: 8px 15px;
+
+            font-size: 12px;
+
+            letter-spacing: 1.2px;
+
+        }
+
+        header {
+
+    min-height: 104px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 8px 7%;
+
+    background: #ffffff;
+
+    position: relative;
+
+    z-index: 5;
+
+} 
+
+     .logo {
+
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: baseline;
+
+    gap: 8px;
+
+    text-decoration: none;
+
+    line-height: 1;
+
+}
+
+.logo .logo-hindi {
+
+    color: #ff0000 !important;
+
+    font-size: 38px;
+
+    font-weight: 800;
+
+}
+
+.logo .logo-english {
+
+    color: #ffd700 !important;
+
+    font-size: 21px;
+
+    font-weight: 800;
+
+    letter-spacing: 0;
+
+    word-spacing: 0;
+
+}
+
+        .logo span { color: var(--gold); }
+
+        nav { display: flex; align-items: center; gap: 30px; }
+
+        nav a {
+
+            color: var(--text);
+
+            font-size: 14px;
+
+            transition: color .2s;
+
+        }
+
+        nav a:hover { color: var(--gold); }
+
+        .nav-cta {
+
+            padding: 11px 18px;
+
+            color: white !important;
+
+            background: var(--green);
+
+            border-radius: 3px;
+
+        }
+
+        /* HERO SLIDER */
+
+        .hero {
+
+            position: relative;
+
+            height: min(690px, 78vh);
+
+            min-height: 500px;
+
+            overflow: hidden;
+
+            background: var(--green-dark);
+
+            color: white;
+
+        }
+
+        .slide {
+
+            position: absolute;
+
+            inset: 0;
+
+            background-position: center;
+
+            background-size: cover;
+
+            opacity: 0;
+
+            transform: scale(1.04);
+
+            transition: opacity 1s ease, transform 6s ease;
+
+        }
+
+        .slide.active {
+
+            opacity: 1;
+
+            transform: scale(1);
+
+        }
+
+        .hero-shade {
+
+            position: absolute;
+
+            inset: 0;
+
+            background: linear-gradient(
+
+                90deg,
+
+                rgba(8, 30, 24, .82) 0%,
+
+                rgba(8, 30, 24, .52) 48%,
+
+                rgba(8, 30, 24, .12) 100%
+
+            );
+
+        }
+
+        .hero-content {
+
+            position: absolute;
+
+            z-index: 2;
+
+            top: 50%;
+
+            left: 8%;
+
+            transform: translateY(-48%);
+
+            max-width: 660px;
+
+            padding-right: 25px;
+
+        }
+
+        .eyebrow {
+
+            color: #e8ca8c;
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            letter-spacing: 3px;
+
+            text-transform: uppercase;
+
+        }
+
+        .hero h1 {
+
+            margin: 20px 0;
+
+            font-family: Georgia, "Times New Roman", serif;
+
+            font-size: clamp(42px, 5.4vw, 72px);
+
+            line-height: 1.08;
+
+            font-weight: 500;
+
+        }
+
+        .hero p {
+
+            max-width: 500px;
+
+            color: #f1f1ec;
+
+            font-size: 17px;
+
+            margin-bottom: 30px;
+
+        }
+
+        .button {
+
+            display: inline-block;
+
+            padding: 14px 25px;
+
+            background: var(--gold);
+
+            color: #18291f;
+
+            border: 1px solid var(--gold);
+
+            font-size: 13px;
+
+            font-weight: 700;
+
+            letter-spacing: .5px;
+
+            transition: background .2s, color .2s;
+
+        }
+
+        .button:hover {
+
+            background: white;
+
+            border-color: white;
+
+        }
+
+        .button-outline {
+
+            background: transparent;
+
+            color: white;
+
+            border-color: rgba(255,255,255,.7);
+
+            margin-left: 10px;
+
+        }
+
+        .button-outline:hover { color: var(--green); }
+
+        .slider-arrow {
+
+            position: absolute;
+
+            z-index: 3;
+
+            top: 50%;
+
+            transform: translateY(-50%);
+
+            width: 45px;
+
+            height: 45px;
+
+            border: 1px solid rgba(255,255,255,.6);
+
+            border-radius: 50%;
+
+            color: white;
+
+            background: rgba(0,0,0,.15);
+
+            font-size: 24px;
+
+            cursor: pointer;
+
+        }
+
+        .slider-arrow:hover { background: var(--gold); color: var(--green-dark); }
+
+        .slider-arrow.prev { left: 25px; }
+
+        .slider-arrow.next { right: 25px; }
+
+        .slider-dots {
+
+            position: absolute;
+
+            z-index: 3;
+
+            bottom: 30px;
+
+            left: 8%;
+
+            display: flex;
+
+            gap: 9px;
+
+        }
+
+        .dot {
+
+            width: 28px;
+
+            height: 3px;
+
+            border: 0;
+
+            background: rgba(255,255,255,.5);
+
+            cursor: pointer;
+
+        }
+
+        .dot.active { background: var(--gold); width: 45px; }
+
+        /* BOOKING BAR */
+
+        .booking-wrap {
+
+            position: relative;
+
+            z-index: 4;
+
+            padding: 0 8%;
+
+            margin-top: -1px;
+
+            background: var(--green);
+
+        }
+
+        .booking-bar {
+
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr) auto;
+
+            gap: 20px;
+
+            align-items: center;
+
+            padding: 24px 0;
+
+            color: white;
+
+        }
+
+        .booking-field label {
+
+            display: block;
+
+            margin-bottom: 5px;
+
+            color: #d6c59f;
+
+            font-size: 11px;
+
+            letter-spacing: 1px;
+
+            text-transform: uppercase;
+
+        }
+
+        .booking-field input,
+
+        .booking-field select {
+
+            width: 100%;
+
+            padding: 10px;
+
+            border: 1px solid rgba(255,255,255,.3);
+
+            border-radius: 2px;
+
+            background: #fff;
+
+            color: var(--text);
+
+            font: inherit;
+
+        }
+
+        .booking-bar .button { cursor: pointer; white-space: nowrap; }
+
+        /* CONTENT SECTIONS */
+
+        section.content-section { padding: 90px 8%; }
+
+        .section-kicker {
+
+            color: #a47e3c;
+
+            font-size: 11px;
+
+            font-weight: bold;
+
+            letter-spacing: 2.5px;
+
+            text-transform: uppercase;
+
+        }
+
+        .section-title {
+
+            margin: 12px 0 15px;
+
+            color: var(--green);
+
+            font-family: Georgia, "Times New Roman", serif;
+
+            font-size: clamp(32px, 4vw, 46px);
+
+            line-height: 1.2;
+
+            font-weight: 500;
+
+        }
+
+        .section-description {
+
+            max-width: 650px;
+
+            color: var(--muted);
+
+        }
+
+        .about-grid {
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 55px;
+
+            align-items: center;
+
+        }
+
+        .about-photo {
+
+            width: 100%;
+
+            height: 390px;
+
+            object-fit: cover;
+
+        }
+
+        .rooms-section { background: var(--cream); }
+
+        .section-heading-row {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: end;
+
+            gap: 20px;
+
+            margin-bottom: 35px;
+
+        }
+
+        .rooms-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+
+            gap: 25px;
+
+        }
+
+        .room-card {
+
+            background: white;
+
+            border: 1px solid #eee8dc;
+
+            transition: transform .25s, box-shadow .25s;
+
+        }
+
+        .room-card:hover {
+
+            transform: translateY(-5px);
+
+            box-shadow: 0 14px 32px rgba(20,45,33,.1);
+
+        }
+
+        .room-card img {
+
+            width: 100%;
+
+            height: 245px;
+
+            object-fit: cover;
+
+            display: block;
+
+        }
+
+        .room-info { padding: 24px; }
+
+        .room-info h3 {
+
+            color: var(--green);
+
+            font-family: Georgia, "Times New Roman", serif;
+
+            font-size: 23px;
+
+            font-weight: 500;
+
+            margin-bottom: 8px;
+
+        }
+
+        .room-info p {
+
+            color: var(--muted);
+
+            font-size: 14px;
+
+            margin-bottom: 18px;
+
+        }
+
+        .text-link {
+
+            color: #9a7438;
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            letter-spacing: .7px;
+
+            text-transform: uppercase;
+
+        }
+
+        .experience {
+
+            text-align: center;
+
+            color: white;
+
+            background:
+
+                linear-gradient(rgba(13,43,34,.83), rgba(13,43,34,.83)),
+
+                url("https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1800&q=85")
+
+                center/cover;
+
+        }
+
+        .experience .section-title { color: white; }
+
+        .experience .section-description { color: #e4e8e1; margin: 0 auto 25px; }
+
+        .contact-section { text-align: center; background: white; }
+
+        .contact-section .section-description { margin: 0 auto 25px; }
+
+        footer {
+
+            padding: 45px 8% 20px;
+
+            color: #dfe8e1;
+
+            background: #102e27;
+
+        }
+
+        .footer-main {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 30px;
+
+            padding-bottom: 30px;
+
+        }
+
+        footer h3 { color: white; margin-bottom: 10px; }
+
+        footer p { color: #bdcbc1; font-size: 14px; }
+
+        .copyright { border-top: 1px solid #365348; padding-top: 18px; font-size: 12px; }
+
+        @media (max-width: 850px) {
+
+            header { padding: 18px 5%; height: auto; gap: 15px; flex-wrap: wrap; }
+
+            nav { gap: 17px; flex-wrap: wrap; }
+
+            .hero-content { left: 7%; }
+
+            .booking-wrap { padding: 0 5%; }
+
+            .booking-bar { grid-template-columns: repeat(2, 1fr); }
+
+            section.content-section { padding: 65px 6%; }
+
+            .about-grid { gap: 30px; }
+
+            .rooms-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+        }
+
+        @media (max-width: 560px) {
+
+            .logo { font-size: 23px; }
+
+            nav { width: 100%; gap: 16px; }
+
+            nav a { font-size: 12px; }
+
+            .nav-cta { padding: 7px 10px; }
+
+            .hero { min-height: 570px; height: 72vh; }
+
+            .hero-content { left: 7%; right: 6%; padding-right: 0; }
+
+            .hero h1 { font-size: 43px; }
+
+            .hero p { font-size: 15px; }
+
+            .button { padding: 12px 16px; }
+
+            .button-outline { margin: 12px 0 0; }
+
+            .slider-arrow { width: 35px; height: 35px; font-size: 18px; }
+
+            .slider-arrow.prev { left: 10px; }
+
+            .slider-arrow.next { right: 10px; }
+
+            .booking-bar { grid-template-columns: 1fr; gap: 13px; }
+
+            .about-grid, .rooms-grid { grid-template-columns: 1fr; }
+
+            .about-photo { height: 280px; }
+
+            .section-heading-row, .footer-main { flex-direction: column; align-items: flex-start; }
+
+            .room-card img { height: 230px; }
+
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            *, *::before, *::after {
+
+                scroll-behavior: auto !important;
+
+                transition-duration: .01ms !important;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="topbar">YOUR STAY IN SARNATH, VARANASI · WARM HOSPITALITY</div>
+
+    <header>
+
+   <a class="logo" href="#home" aria-label="ShreeManniinn Hotel home">
+
+    <img
+
+        src="images/shreemaniinn-logo.png"
+
+        alt="ShreeManniinn Hotel logo"
+
+        class="hotel-logo"
+
+    >
+
+</a>
+
+    </header>
+
+    <main>
+
+        <section class="hero" id="home" aria-label="Hotel highlights">
+
+            <div class="slide active"
+
+                 style="background-image:url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=2000&q=85')"
+
+                 role="img" aria-label="Hotel exterior"></div>
+
+            <div class="slide"
+
+                 style="background-image:url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=2000&q=85')"
+
+                 role="img" aria-label="Hotel room interior"></div>
+
+            <div class="slide"
+
+                 style="background-image:url('https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=2000&q=85')"
+
+                 role="img" aria-label="Hotel hospitality"></div>
+
+            <div class="hero-shade"></div>
+
+            <div class="hero-content">
+
+                <div class="eyebrow">Welcome to Sarnath, Varanasi</div>
+
+                <h1 id="hero-title">A Comfortable Stay, A Memorable Journey</h1>
+
+                <p id="hero-description">
+
+                    Discover a welcoming place to stay while exploring the culture,
+
+                    heritage and peaceful surroundings of Sarnath.
+
+                </p>
+
+                <a class="button" href="#rooms">Explore Our Rooms</a>
+
+                <a class="button button-outline" href="#booking">Plan Your Stay</a>
+
+            </div>
+
+            <button class="slider-arrow prev" type="button" aria-label="Previous image">‹</button>
+
+            <button class="slider-arrow next" type="button" aria-label="Next image">›</button>
+
+            <div class="slider-dots" aria-label="Choose a slide">
+
+                <button class="dot active" type="button" aria-label="Slide 1"></button>
+
+                <button class="dot" type="button" aria-label="Slide 2"></button>
+
+                <button class="dot" type="button" aria-label="Slide 3"></button>
+
+            </div>
+
+        </section>
+
+        <div class="booking-wrap" id="booking">
+
+            <form class="booking-bar" id="enquiry-form">
+
+                <div class="booking-field">
+
+                    <label for="checkin">Check-in</label>
+
+                    <input type="date" id="checkin" name="checkin" required>
+
+                </div>
+
+                <div class="booking-field">
+
+                    <label for="checkout">Check-out</label>
+
+                    <input type="date" id="checkout" name="checkout" required>
+
+                </div>
+
+                <div class="booking-field">
+
+                    <label for="guests">Guests</label>
+
+                    <select id="guests" name="guests">
+
+                        <option value="1">1 guest</option>
+
+                        <option value="2" selected>2 guests</option>
+
+                        <option value="3">3 guests</option>
+
+                        <option value="4">4 guests</option>
+
+                        <option value="5+">5+ guests</option>
+
+                    </select>
+
+                </div>
+
+                <button class="button" type="submit">Check Availability →</button>
+
+            </form>
+
+        </div>
+
+        <section class="content-section" id="about">
+
+            <div class="about-grid">
+
+                <div>
+
+                    <div class="section-kicker">A welcoming experience</div>
+
+                    <h2 class="section-title">Make Your Varanasi Visit Memorable</h2>
+
+                    <p class="section-description">
+
+                        Discover a comfortable base for your visit to Sarnath.
+
+                        Our goal is to make every guest feel welcome, with a
+
+                        pleasant place to rest after a day of exploring.
+
+                    </p>
+
+                    <br>
+
+                    <a class="text-link" href="#contact">GET IN TOUCH →</a>
+
+                </div>
+
+                <img class="about-photo"
+
+                     src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1100&q=85"
+
+                     alt="Comfortable hotel room">
+
+            </div>
+
+        </section>
+
+        <section class="content-section rooms-section" id="rooms">
+
+            <div class="section-heading-row">
+
+                <div>
+
+                    <div class="section-kicker">Rest and recharge</div>
+
+                    <h2 class="section-title">Find Your Perfect Room</h2>
+
+                    <p class="section-description">
+
+                        Enquire about available room options for your travel dates.
+
+                    </p>
+
+                </div>
+
+                <a class="text-link" href="#booking">CHECK YOUR DATES →</a>
+
+            </div>
+
+            <div class="rooms-grid">
+
+                <article class="room-card">
+
+                    <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=85"
+
+                         alt="Example of a comfortable hotel bedroom">
+
+                    <div class="room-info">
+
+                        <h3>Deluxe Room</h3>
+
+                        <p>A relaxing space to unwind after exploring Varanasi.</p>
+
+                        <a class="text-link" href="#booking">ENQUIRE ABOUT THIS ROOM →</a>
+
+                    </div>
+
+                </article>
+
+                <article class="room-card">
+
+                    <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=85"
+
+                         alt="Example of a modern hotel room">
+
+                    <div class="room-info">
+
+                        <h3>Standard Room</h3>
+
+                        <p>A practical accommodation option for your visit.</p>
+
+                        <a class="text-link" href="#booking">ENQUIRE ABOUT THIS ROOM →</a>
+
+                    </div>
+
+                </article>
+
+                <article class="room-card">
+
+                    <img src="https://images.unsplash.com/photo-1595576508898-0ad5c879a061?auto=format&fit=crop&w=900&q=85"
+
+                         alt="Example of a hotel guest room">
+
+                    <div class="room-info">
+
+                        <h3>Family Room</h3>
+
+                        <p>Ask us about room options for your group or family.</p>
+
+                        <a class="text-link" href="#booking">ENQUIRE ABOUT THIS ROOM →</a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <section class="content-section experience">
+
+            <div class="section-kicker">Discover the destination</div>
+
+            <h2 class="section-title">Experience the Spirit of Sarnath</h2>
+
+            <p class="section-description">
+
+                Plan your visit to the historic and cultural surroundings of Varanasi.
+
+            </p>
+
+            <a class="button" href="#contact">Plan Your Visit</a>
+
+        </section>
+
+        <section class="content-section contact-section" id="contact">
+
+            <div class="section-kicker">We're here to help</div>
+
+            <h2 class="section-title">Let's Plan Your Stay</h2>
+
+            <p class="section-description">
+
+                Have questions about room options or your travel dates?
+
+                Send an enquiry and our team can get back to you.
+
+            </p>
+
+            <a class="button" href="#booking">Make an Enquiry</a>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-main">
+
+            <div>
+
+                <h3>ShreeManniinn</h3>
+
+                <p>A welcoming stay in Sarnath, Varanasi.</p>
+
+            </div>
+
+            <div>
+
+                <h3>Explore</h3>
+
+                <p><a href="#rooms" style="color:inherit">Rooms</a> ·
+
+                   <a href="#about" style="color:inherit">About</a> ·
+
+                   <a href="#contact" style="color:inherit">Contact</a></p>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+
+            © <span id="year"></span> ShreeManniinn. All rights reserved.
+
+            Photos and room categories are placeholders until confirmed by the hotel owner.
+
+        </div>
+
+    </footer>
+
+    <script>
+
+        // Automatic hero slider with manual controls.
+
+        const slides = [...document.querySelectorAll(".slide")];
+
+        const dots = [...document.querySelectorAll(".dot")];
+
+        const previousButton = document.querySelector(".slider-arrow.prev");
+
+        const nextButton = document.querySelector(".slider-arrow.next");
+
+        let currentSlide = 0;
+
+        let sliderTimer;
+
+        function showSlide(index) {
+
+            currentSlide = (index + slides.length) % slides.length;
+
+            slides.forEach((slide, i) => {
+
+                slide.classList.toggle("active", i === currentSlide);
+
+            });
+
+            dots.forEach((dot, i) => {
+
+                dot.classList.toggle("active", i === currentSlide);
+
+            });
+
+        }
+
+        function startSlider() {
+
+            clearInterval(sliderTimer);
+
+            sliderTimer = setInterval(() => {
+
+                showSlide(currentSlide + 1);
+
+            }, 5000);
+
+        }
+
+        previousButton.addEventListener("click", () => {
+
+            showSlide(currentSlide - 1);
+
+            startSlider();
+
+        });
+
+        nextButton.addEventListener("click", () => {
+
+            showSlide(currentSlide + 1);
+
+            startSlider();
+
+        });
+
+        dots.forEach((dot, i) => {
+
+            dot.addEventListener("click", () => {
+
+                showSlide(i);
+
+                startSlider();
+
+            });
+
+        });
+
+        // Pause automatic transitions while the user hovers over the hero.
+
+        const hero = document.querySelector(".hero");
+
+        hero.addEventListener("mouseenter", () => clearInterval(sliderTimer));
+
+        hero.addEventListener("mouseleave", startSlider);
+
+        // Date validation for the enquiry form.
+
+        const checkin = document.getElementById("checkin");
+
+        const checkout = document.getElementById("checkout");
+
+        const today = new Date();
+
+        const localToday = [
+
+            today.getFullYear(),
+
+            String(today.getMonth() + 1).padStart(2, "0"),
+
+            String(today.getDate()).padStart(2, "0")
+
+        ].join("-");
+
+        checkin.min = localToday;
+
+        checkout.min = localToday;
+
+        checkin.addEventListener("change", () => {
+
+            checkout.min = checkin.value || localToday;
+
+            if (checkout.value && checkout.value <= checkin.value) {
+
+                checkout.value = "";
+
+            }
+
+        });
+
+        document.getElementById("enquiry-form").addEventListener("submit", (event) => {
+
+            event.preventDefault();
+
+            if (checkin.value && checkout.value <= checkin.value) {
+
+                alert("Check-out must be after check-in.");
+
+                return;
+
+            }
+
+            const guests = document.getElementById("guests").value;
+
+            alert(
+
+                "Your dates are selected. Booking availability is not connected yet. " +
+
+                "Next, we will connect this form to the Django booking system."
+
+            );
+
+        });
+
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        startSlider();
+
+    </script>
+
+</body>
+
+</html>
